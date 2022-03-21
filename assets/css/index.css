@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Abel";
+}
+
+body {
+    background-color: #161616
+}
+
+h2, h3, h4, span {
+    color: #fff;
+}
+
+p {
+    color: #b1b1b1;
+}
+
+.navbar {
+    background-color: transparent !important;
+    color: #fff !important;
+    /* backdrop-filter: blur(25px);
+    border-bottom: 1px solid #78787844 */
+}
+
+.navbar-light .navbar-brand {
+    color: rgb(255 255 255);
+}
+
+.navbar-light .navbar-brand:focus, .navbar-light .navbar-brand:hover {
+    color: rgb(255 255 255 / 70%);
+}
+
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler {
+    color: transparent;
+    border-color: transparent;
+}
+
+.offcanvas-header {
+    background-color: #0f0f0f;
+}
+
+.offcanvas-body {
+    background-color: #0f0f0f;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255 255 255);
+}
+
+.offcanvas-body {
+    padding-left: 1rem;
+    padding-bottom: 100vh;
+    overflow-y: unset;
+
+}
+
+.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+    color: rgb(255 255 255 / 70%);
+}
+
+.textLogo {
+    font-size: 20px;
+}
+
+.grad {
+    color: #a900ff;
+}
+
+/* GRADIENT ANIMADO */
+
+.header {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(40deg, rgba(2, 0, 36, 1) 0%, rgb(129 48 221) 7%, rgba(22, 0, 48, 1) 100%);
+    animation: colors 8s ease infinite;
+    background-size: 400% 400%;
+}
+
+
+@keyframes colors {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* fim GRADIENT ANIMADO */
+
+/* Astronauta */
+
+.bg-fundo {
+    height: 55vh;
+    animation: flutuacao 10s ease-in-out infinite;
+    margin-top: 80px;
+}
+
+@keyframes flutuacao {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-40px) rotateZ(10deg);
+    }
+
+}
+
+/* Astronauta */
+
+
+.marginTheader {
+    margin-top: 190px;
+}
+
+.waves {
+    position: absolute;
+    bottom: 0;
+
+}
+
+/* ESTRELAS */
+
+.night {
+    position: absolute;
+    width: 40%;
+    height: 75%;
+    transform: rotateZ(40deg);
+}
+
+.star {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    height: 4px;
+    background: linear-gradient(-45deg, #e4bfed, rgba(0, 0, 255, 0));
+    border-radius: 999px;
+    filter: drop-shadow(0 0 6px #699BFF);
+    animation: tail 3s ease-in-out infinite, falling 3s ease-in-out infinite;
+}
+
+@keyframes tail {
+    0% {
+        width: 0;
+    }
+
+    30% {
+        width: 100px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+@keyframes falling {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(300px);
+    }
+}
+
+.star::before, .star::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 2px);
+    right: 0;
+    height: 4px;
+    background: linear-gradient(-45deg, rgba(0, 0, 255, 0), #c95fff, rgb(255 0 212 / 0%));
+    border-radius: 100%;
+    transform: translateX(50%) rotateZ(45deg);
+    animation: shining 3s ease-in-out infinite;
+}
+
+@keyframes shining {
+    0% {
+        width: 0;
+    }
+
+    50% {
+        width: 30px;
+    }
+
+    100% {
+        width: 0;
+    }
+}
+
+.star::after {
+    transform: translateX(50%) rotateZ(-45deg);
+}
+
+.star:nth-child(1) {
+    top: calc(50% - 100px);
+    left: calc(50% - 250px);
+    animation-delay: 1s;
+}
+
+.star:nth-child(1)::before, .star:nth-child(1)::after {
+    animation-delay: 1s;
+}
+
+.star:nth-child(2) {
+    top: calc(50% - 50px);
+    left: calc(50% - 200px);
+    animation-delay: 1.2s;
+}
+
+.star:nth-child(2)::before, .star:nth-child(2)::after {
+    animation-delay: 1.2s;
+}
+
+.star:nth-child(3) {
+    top: calc(50% - 0px);
+    left: calc(50% - 150px);
+    animation-delay: 1.4s;
+}
+
+.star:nth-child(3)::before, .star:nth-child(3)::after {
+    animation-delay: 1.4s;
+}
+
+.star:nth-child(4) {
+    top: calc(50% - -50px);
+    left: calc(50% - 200px);
+    animation-delay: 1.6s;
+}
+
+.star:nth-child(4)::before, .star:nth-child(4)::after {
+    animation-delay: 1.6s;
+}
+
+.star:nth-child(5) {
+    top: calc(50% - -100px);
+    left: calc(50% - 250px);
+    animation-delay: 1.8s;
+}
+
+.star:nth-child(5)::before, .star:nth-child(5)::after {
+    animation-delay: 1.8s;
+}
+
+
+/* FIM ESTRELAS */
+
+/* BTN */
+.button {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    position: relative;
+    padding: 6px 0;
+    font-size: 17px;
+    border-radius: 12px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff !important;
+    border: 1px solid #a900ff;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.button::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background: #a900ff;
+
+    transition: all .5s;
+    z-index: -1;
+}
+
+.item3::before {
+    width: 100%;
+    height: 0%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.item3:hover::before {
+    height: 600%;
+}
+
+
+
+/* FIM BTN */
+
+
+/* btn discord */
+
+.buttonDiscord {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    position: relative;
+    padding: 6px 0;
+    font-size: 17px;
+    z-index: 1;
+    border-radius: 12px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff !important;
+    border: 1px solid #989FEC;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttonDiscord::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background: #989FEC;
+
+    transition: all .5s;
+    z-index: -1;
+}
+
+.itemDiscord::before {
+    width: 100%;
+    height: 0%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.itemDiscord:hover::before {
+    height: 600%;
+}
+
+
+/* fim btn discord */
+
+
+/* SERVIÇOS */
+
+.servicos {
+    margin-bottom: 65px;
+}
+
+.desenvolvemos {
+    margin-bottom: 140px;
+}
+
+/* SERVIÇOS */
+
+/* container atendimento */
+
+.svgDiscord {
+    width: 50%;
+    animation: discord 5s ease-in-out infinite;
+}
+
+@keyframes discord {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-35px);
+    }
+}
+
+.margin-qualid {
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.qualityRapidez {
+    /* background-color: #0f0f0f;  */
+    background-image: linear-gradient(to top, #0f0f0f 93%, #161616) !important;
+    padding: 90px 60px 30px;
+}
+
+
+
+
+/* container atendimento */
+
+
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(255, 255, 255);
+
+}
+
+.paddingServi {
+    padding: 0 55px;
+}
+
+/* ICONS */
+
+.bi-currency-bitcoin {
+    font-size: 40px;
+    color: #a900ff;
+}
+
+.bi-braces {
+    font-size: 40px;
+    color: #a900ff;
+}
+
+.bi-display {
+    font-size: 40px;
+    color: #a900ff;
+}
+
+.bi-x-lg::before {
+    color: #a900ff;
+}
+
+/* FIM ICONS */
+
+@media (min-width: 1440px) {
+    .marginTheader {
+        margin-top: 260px;
+    }
+}
