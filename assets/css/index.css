@@ -72,6 +72,10 @@ p {
     color: #a900ff;
 }
 
+.gradMoney {
+    color: #37A18E;
+}
+
 /* GRADIENT ANIMADO */
 
 .header {
@@ -357,6 +361,54 @@ p {
 /* fim btn discord */
 
 
+/* btn moneny */
+
+.buttonMoney {
+    display: flex;
+    width: 40%;
+    justify-content: center;
+    position: relative;
+    padding: 6px 0;
+    font-size: 17px;
+    border-radius: 12px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #fff !important;
+    border: 1px solid #37A18E;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.buttonMoney::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+
+    position: absolute;
+
+    background: #37A18E;
+
+    transition: all .5s;
+    z-index: -1;
+}
+
+.itemMoney::before {
+    width: 100%;
+    height: 0%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.itemMoney:hover::before {
+    height: 600%;
+}
+
+/* fim btn money */
+
+
 /* SERVIÇOS */
 
 .servicos {
@@ -392,9 +444,9 @@ p {
 }
 
 .qualityRapidez {
-    /* background-color: #0f0f0f;  */
-    background-image: linear-gradient(to top, #0f0f0f 93%, #161616) !important;
-    padding: 90px 60px 30px;
+    background-color: #0f0f0f;
+    /* background-image: linear-gradient(to top, #0f0f0f 93%, #161616); */
+    padding: 70px 60px 30px;
 }
 
 
@@ -403,6 +455,19 @@ p {
 /* container atendimento */
 
 
+/* pagamentos */
+
+.pagamentos {
+    background-color: #202020;
+    padding: 70px 60px 30px;
+}
+
+.leftMon {
+    margin-left: -40px;
+}
+
+/* pagamentos */
+
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -410,12 +475,18 @@ p {
 }
 
 *::-webkit-scrollbar-track {
-    background-color: transparent;
+    background-color: #20202000;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.61);
 
+}
+
+
+*::selection {
+    background-color: #8015b6;
+    color: #fff;
 }
 
 .paddingServi {
