@@ -449,9 +449,6 @@ p {
     padding: 70px 60px 30px;
 }
 
-
-
-
 /* container atendimento */
 
 
@@ -502,12 +499,14 @@ p {
 
 
 .mtHplanos {
-    margin-top: -100px;
+    margin-top: -150px;
     margin-bottom: 6rem;
 }
-/* #00b998 */
-/* #25443e */
 
+
+.cardPlanos {
+    
+}
 
 
 
