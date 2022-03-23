@@ -68,7 +68,7 @@ p {
     font-size: 20px;
 }
 
-.grad {
+.grad, a, .bi {
     color: #a900ff;
 }
 
@@ -425,7 +425,7 @@ p {
 
 .svgDiscord {
     width: 50%;
-    animation: discord 5s ease-in-out infinite;
+    animation: discord 4s ease-in-out infinite;
 }
 
 @keyframes discord {
@@ -474,7 +474,7 @@ p {
     animation: colorPlanos 8s ease infinite;
     background-size: 400% 400%;
     width: 100%;
-    height: 100vh;
+    height: 230vh;
 }
 
 
@@ -505,12 +505,67 @@ p {
 
 
 .cardPlanos {
-    
+    /* background-color: rgba(250,250,250,0.1); */
+    background-color: #0f0f0fc4;
+    padding: 10px 27px;
+    border-radius: 30px;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 50%);
+}
+
+.mtRowPlanos {
+    margin-top: -40px;
 }
 
 
+.duvidas {
+    margin-top: 120px;
+}
+
+
+.accordion-item {
+    background-color: #0f0f0fc4;
+    color: #fff;
+    margin-bottom: 12px;
+    border-radius: 16px !important;
+    box-shadow: 5px 5px 20px rgb(0 0 0 / 50%)
+}
+
+.accordion-button {
+    background-color: transparent;
+    color: #fff;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #fff;
+    background-color: transparent;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%);
+}
+
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.25rem rgb(255 255 255 / 0%) !important;
+}
+
+
+.accordion-button::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23212529'%3e%3cpath stroke='rgb(169 2 255)' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+}
+
+.accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%230c63e4'%3e%3cpath stroke='rgb(169 2 255)' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+
+}
 
 /*  fim planos*/
+
+footer {
+    width: 100%;
+    background-color: #0f0f0f;
+}
+
+.footer {
+    padding: 50px 0;
+}
 
 /* Works on Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
@@ -525,7 +580,6 @@ p {
     background-color: rgba(255, 255, 255, 0.61);
 
 }
-
 
 *::selection {
     background-color: #8015b6;
@@ -554,6 +608,10 @@ p {
 }
 
 .bi-x-lg::before {
+    color: #a900ff;
+}
+
+.bi-check-lg {
     color: #a900ff;
 }
 
