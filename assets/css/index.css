@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #161616
+    background-color: #0f0f0f;
 }
 
 h2, h3, h4, span {
@@ -416,7 +416,7 @@ p {
 }
 
 .desenvolvemos {
-    margin-bottom: 140px;
+    margin-bottom: 150px;
 }
 
 /* SERVIÇOS */
@@ -446,7 +446,7 @@ p {
 .qualityRapidez {
     background-color: #0f0f0f;
     /* background-image: linear-gradient(to top, #0f0f0f 93%, #161616); */
-    padding: 70px 60px 30px;
+    padding: 0 60px 150px;
 }
 
 /* container atendimento */
@@ -455,8 +455,8 @@ p {
 /* pagamentos */
 
 .pagamentos {
-    background-color: #161616;
-    padding: 70px 60px 30px;
+    background-color: #0f0f0f;
+    padding: 0 60px 30px;
 }
 
 .leftMon {
