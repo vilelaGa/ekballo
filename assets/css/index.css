@@ -130,8 +130,8 @@ p {
 }
 
 .waves {
-    /* position: absolute !important;
-    bottom: 0px !important; */
+    position: absolute;
+    bottom: 0;
 
 }
 
@@ -628,6 +628,12 @@ footer {
     .night {
         width: 70%;
         height: 15%;
+
+    }
+
+    .waves {
+        position: absolute;
+        bottom: -5px;
 
     }
 
