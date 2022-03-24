@@ -80,7 +80,7 @@ p {
 
 .header {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background: linear-gradient(40deg, rgba(2, 0, 36, 1) 0%, rgb(129 48 221) 7%, rgba(22, 0, 48, 1) 100%);
     animation: colors 8s ease infinite;
     background-size: 400% 400%;
@@ -130,8 +130,8 @@ p {
 }
 
 .waves {
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
 
 }
 
@@ -628,12 +628,6 @@ footer {
     .night {
         width: 70%;
         height: 15%;
-
-    }
-
-    .waves {
-        position: absolute;
-        bottom: -5px;
 
     }
 
