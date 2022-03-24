@@ -130,8 +130,8 @@ p {
 }
 
 .waves {
-    position: absolute;
-    bottom: 0;
+    position: absolute !important;
+    bottom: 0px !important;
 
 }
 
